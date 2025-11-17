@@ -1,0 +1,26 @@
+# ------------------------------
+# HAND GESTURE RECOGNITION PROJECT
+# Compatible with Python 3.10 – 3.12
+# ------------------------------
+
+# Core ML and Vision
+tensorflow>=2.17.1
+opencv-python==4.9.0.80
+mediapipe==0.10.14
+
+# Data Processing
+numpy>=1.24.3
+pandas>=2.0.3
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.12.2
+
+# Progress bars
+tqdm>=4.66.1
+
+# Machine Learning utilities
+scikit-learn>=1.3.0
+
+# Optional: For GPU (requires NVIDIA CUDA 12.x)
+# tensorflow[and-cuda]>=2.17.1

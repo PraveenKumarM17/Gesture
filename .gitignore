@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data (keep structure, exclude images)
+data/train/*/*.jpg
+data/train/*/*.jpeg
+data/train/*/*.png
+data/train/*/*.bmp
+data/test/*/*.jpg
+data/test/*/*.jpeg
+data/test/*/*.png
+data/test/*/*.bmp
+
+# Model files
+model/*.h5
+model/*.pkl
+model/*.pth
+
+# Logs and outputs
+*.log
+logs/
+output/
