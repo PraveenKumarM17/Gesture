@@ -18,7 +18,7 @@ EPOCHS = 20
 LEARNING_RATE = 0.001
 
 # ==================== PATHS ====================
-BASE_DIR = Path(r"C:\Users\Prave\Desktop\hand-gesture")
+BASE_DIR = Path(r"C:\SignLang\Gesture")
 TRAIN_DIR = BASE_DIR / 'data_grayscale' / 'train'
 TEST_DIR = BASE_DIR / 'data_grayscale' / 'test'
 MODEL_DIR = BASE_DIR / 'model'
