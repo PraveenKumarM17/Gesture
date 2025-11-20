@@ -91,6 +91,7 @@ KAN_DICT = {
     'water': 'ನೀರು',
     'book': 'ಪುಸ್ತಕ',
     'pen': 'ಪೆನ್',
+    'swathi': "ಸ್ವಾತಿ",
     'computer': 'ಕಂಪ್ಯೂಟರ್',
     'phone': 'ಫೋನ್',
     'car': 'ಕಾರು',
@@ -286,6 +287,12 @@ print("\n✅ Final Sentence in Hindi:")
 print(translated_hi)
 
 # Kannada translation
-translated_kn = translate_to_kannada(sentence_text.strip())
-print("\n✅ Final Sentence in Kannada:")
-print(translated_kn)
+translated_ka = translator.translate(sentence_text.strip(), src='en', dest='kn').text
+print("\n✅ Final Translator Sentence in kannada:")
+print(translated_ka)
+
+# Kannada translation
+translated_te = translator.translate(sentence_text.strip(), src='en', dest='te').text
+print("\n✅ Final Translator Sentence in telugu :")
+print(translated_te)
+
