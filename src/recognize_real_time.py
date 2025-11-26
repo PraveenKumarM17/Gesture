@@ -281,18 +281,35 @@ cv2.destroyAllWindows()
 print("\n✅ Final Sentence in English:")
 print(sentence_text.strip())
 
-# Hindi translation
+# Prepare lowercase for checking
+user_text = sentence_text.strip().lower()
+
+# -------------------- Hindi --------------------
 translated_hi = translator.translate(sentence_text.strip(), src='en', dest='hi').text
+
+# Override for "hello"
+if "hello" in user_text:
+    translated_hi = "नमस्ते"
+
 print("\n✅ Final Sentence in Hindi:")
-print(translated_hi)
+print("\t",translated_hi)
 
-# Kannada translation
+# -------------------- Kannada --------------------
 translated_ka = translator.translate(sentence_text.strip(), src='en', dest='kn').text
-print("\n✅ Final Translator Sentence in kannada:")
-print(translated_ka)
 
-# Kannada translation
+# Override for "hello"
+if "hello" in user_text:
+    translated_ka = "\tನಮಸ್ಕಾರ"
+
+print("\n✅ Final Translator Sentence in Kannada:")
+print("\t",translated_ka)
+
+# -------------------- Telugu --------------------
 translated_te = translator.translate(sentence_text.strip(), src='en', dest='te').text
-print("\n✅ Final Translator Sentence in telugu :")
-print(translated_te)
 
+# Override for "hello"
+if "hello" in user_text:
+    translated_te = "\tనమస్తే"
+
+print("\n✅ Final Translator Sentence in Telugu:")
+print("\t",translated_te)
